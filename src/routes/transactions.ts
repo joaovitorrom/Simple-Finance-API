@@ -1,5 +1,5 @@
 import { FastifyInstance } from 'fastify';
-import { knex } from '../src/database';
+import { knex } from '../database';
 import z from 'zod';
 import { randomUUID } from 'node:crypto';
 
