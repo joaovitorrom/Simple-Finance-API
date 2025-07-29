@@ -1,9 +1,9 @@
 import { FastifyReply, FastifyRequest } from "fastify";
 
 export async function checkSessionIdExists (request: FastifyRequest, reply: FastifyReply) {
-    const { session_id } = request.cookies;
+    const { sessionId } = request.cookies;
 
-    if(!session_id) {
+    if(!sessionId) {
         return reply.status(401).send({
             error: 'Unathorized.',
         })
